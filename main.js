@@ -46,7 +46,7 @@ this.removeEventListener("click",insertSymbol);
 (symbol==="X")? symbol="O":symbol="X";
 this.innerHTML=symbol;
 checkWinnner();
-console.log(counter);
+
 
 
 
