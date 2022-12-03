@@ -1,96 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&family=Prompt&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&family=Prompt&display=swap");
+html,body{
+    height:100%;
+    overflow: hidden;
+   }
 
-
-
-*{
-    padding: 0;
-    margin: 0;
-    
+* {
+  padding: 0;
+  margin: 0;
 }
 
-
-.container{
-    width: 100vw;
-    height: 100vh;
-    border: 1px solid transparent;
-    background:linear-gradient(
-        to bottom right,
-        #333333,#121212
-    );
+.container {
+  width: 100%;
+  height: 100%;
+  border: 1px solid transparent;
+  background: #333333;
+ 
 }
 
+.table {
+  width: 450px;
+  height: 450px;
+  margin: 150px auto;
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(to bottom right, #fbcd38, #fcbb5b);
 
-.table{
-    width: 450px;
-    height: 450px;
-    margin: 150px auto;
-    display: flex;
-    flex-wrap: wrap;
-    background:linear-gradient(
-        to bottom right,
-        #FBCD38,#FCBB5B);
-
-    border: 3px outset #888;
-    box-shadow: 0 0 10px rgb(0, 0, 0, 1);
+  border: 3px outset #888;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 1);
 }
 
-.box{
-    width: 150px;
-    height: 150px;
-    border: 1px solid black;
-    box-sizing: border-box;
-    color: #121212;
-    text-align: center;
-    font-size: 75px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    user-select: none;
-    font-family: 'Prompt', sans-serif;
-
+.box {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  color: #121212;
+  text-align: center;
+  font-size: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  font-family: "Prompt", sans-serif;
 }
 
-
-.winner{
-width: 300px;
-height: 100px;
-position: absolute;
-left: 50%;
-transform: translateX(-50%);
-top: 20px;
-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
-background:linear-gradient(
-    to bottom right,
-    #FBCD38,#FCBB5B) ;
-color: #121212;
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: xx-large;
-border-radius: 2%;
-box-shadow: 0 0 8px green,0 0 15px greenyellow;
+.winner {
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20px;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  background: linear-gradient(to bottom right, #fbcd38, #fcbb5b);
+  color: #121212;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+  border-radius: 2%;
+  box-shadow: 0 0 8px green, 0 0 15px greenyellow;
 }
 
-
-
-
-.restart{
-    width: 300px;
-height: 100px;
-position: absolute;
-left: 50%;
-transform: translateX(-50%);
-top: 20px;
-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
-background:linear-gradient(
-    to bottom right,
-    #FBCD38,#FCBB5B) ;
-color: #121212;
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: xx-large;
-border-radius: 2%;
-box-shadow: 0 0 8px red,0 0 15px indianred;
-
+.restart {
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20px;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  background: linear-gradient(to bottom right, #fbcd38, #fcbb5b);
+  color: #121212;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+  border-radius: 2%;
+  box-shadow: 0 0 8px red, 0 0 15px indianred;
 }

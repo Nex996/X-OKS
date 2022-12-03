@@ -45,7 +45,7 @@ function insertSymbol(){
 this.removeEventListener("click",insertSymbol);
 (symbol==="X")? symbol="O":symbol="X";
 this.innerHTML=symbol;
-checkWinnner();
+checkWinner();
 
 
 
@@ -54,12 +54,11 @@ checkWinnner();
 }
 
 
-function checkWinnner(){
+function checkWinner(){
     line.forEach(line => {
         let box1=boxes[line[0]];
         let box2=boxes[line[1]];
         let box3=boxes[line[2]];
-        let brojac=0;
         if(box1.innerHTML===box2.innerHTML && box1.innerHTML===box3.innerHTML && box1.innerHTML!=""){
             box1.style.background="tomato";
             box2.style.background="tomato";
